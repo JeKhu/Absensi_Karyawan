@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title> Cuti Karyawan - Lazy Group </title>
+    <link rel="stylesheet" href="css/stylemp.css">
+    <link rel="stylesheet" href="css/cssb/bootstrap.min.css">
+    <link rel="stylesheet" href="DataTables/DataTables-1.11.3/css/dataTables.bootstrap5.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <!-- Bar-->
+    <div class="sidebar close">
+      <div class="logo-details">
+        <i class='bx bxs-factory'></i>
+        <span class="logo_name">Lazy Group</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="dashboard-e.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="dashboard-e.html">Dashboard</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class='bx bx-notepad'></i>
+              <span class="link_name">Cuti</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Cuti</a></li>
+            <li><a href="req.html">Permohonan Cuti</a></li>
+            <li><a href="status.html">Status Cuti</a></li>
+          </ul>
+        </li>
+
+        <!-- Logout -->
+        <li>
+          <div class="profile-details">
+            <a href="">
+              <i class='bx bx-log-out' ></i>
+              <span class="link_name">Keluar</span>
+            </a>
+        </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Isi-->
+    <section class="home-section">
+      <div class="home-content">
+        <i class='bx bx-menu' ></i>
+        <span class="text">Status Cuti</span>
+      </div>
+
+      <div class="container">
+        <div class="container1">
+          <form action="#" class="form">
+            <h1 class="display-7">Selamat Datang</h1>
+            <h1 class="display-7">Nama</h1>
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/jsb/jquery.min.js"></script>
+    <script src="js/jsb/bootstrap.bundle.min.js"></script>
+    <script src="DataTables/DataTables-1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="DataTables/DataTables-1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('#table').DataTable();
+      } );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title> Cuti Karyawan - Lazy Group </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cssb/bootstrap.min.css">
+    <link rel="stylesheet" href="DataTables/DataTables-1.11.3/css/dataTables.bootstrap5.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <!-- Bar-->
+    <div class="sidebar close">
+      <div class="logo-details">
+        <i class='bx bxs-factory'></i>
+        <span class="logo_name">Lazy Group</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="dashboard-a.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="dashboard-a.html">Dashboard</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class='bx bx-user'></i>
+              <span class="link_name">User Login</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">User Login</a></li>
+            <li><a href="inputuser.html">Input User</a></li>
+            <li><a href="datauser.html">Data User</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class='bx bx-group' ></i>
+              <span class="link_name">Karyawan</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Karyawan</a></li>
+            <li><a href="inputkaryawan.html">Input Karyawan</a></li>
+            <li><a href="datakaryawan.html">Data Karyawan</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class='bx bx-buildings' ></i>
+              <span class="link_name">Departemen</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Departemen</a></li>
+            <li><a href="inputdepart.html">Input Departemen</a></li>
+            <li><a href="datadepart.html">Data Departemen</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class='bx bx-notepad'></i>
+              <span class="link_name">Cuti</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Cuti</a></li>
+            <li><a href="approv.html">Approval</a></li>
+            <li><a href="datacuti.html">Data Cuti</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="laporan.html">
+            <i class='bx bxs-report' ></i>
+            <span class="link_name">Laporan</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="laporan.html">Laporan</a></li>
+          </ul>
+        </li>
+
+        <!-- Logout -->
+        <li>
+          <div class="profile-details">
+            <a href="">
+              <i class='bx bx-log-out' ></i>
+              <span class="link_name">Keluar</span>
+            </a>
+        </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Isi-->
+    <section class="home-section">
+      <div class="home-content">
+        <i class='bx bx-menu' ></i>
+        <span class="text">Master Data Departemen</span>
+      </div>
+
+      <div class="container">
+        <div class="container1">
+          <form action="#" class="form">
+            <h1 class="display-7">Tabel Departemen</h3>
+            <table id="table" class="table table-striped" style="width:100%">
+              <thead>
+                <tr>
+                  <th>Kode</th>
+                  <th>Nama Departemen</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>001</td>
+                  <td>IT</td>
+                  <td>
+                    <a href="#">Edit</a>
+                    <a href="#">Hapus</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>002</td>
+                  <td>Akunting</td>
+                  <td>
+                    <a href="#">Edit</a>
+                    <a href="#">Hapus</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/jsb/jquery.min.js"></script>
+    <script src="js/jsb/bootstrap.bundle.min.js"></script>
+    <script src="DataTables/DataTables-1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="DataTables/DataTables-1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('#table').DataTable();
+      } );
+    </script>
+  </body>
+</html>

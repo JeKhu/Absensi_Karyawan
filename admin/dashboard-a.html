@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title> Cuti Karyawan - Lazy Group </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <!-- Bar-->
+    <div class="sidebar close">
+      <div class="logo-details">
+        <i class='bx bxs-factory'></i>
+        <span class="logo_name">Lazy Group</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="dashboard-a.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="dashboard-a.html">Dashboard</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class='bx bx-user'></i>
+              <span class="link_name">User Login</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">User Login</a></li>
+            <li><a href="inputuser.html">Input User</a></li>
+            <li><a href="datauser.html">Data User</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class='bx bx-group' ></i>
+              <span class="link_name">Karyawan</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Karyawan</a></li>
+            <li><a href="inputkaryawan.html">Input Karyawan</a></li>
+            <li><a href="datakaryawan.html">Data Karyawan</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class='bx bx-buildings' ></i>
+              <span class="link_name">Departemen</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Departemen</a></li>
+            <li><a href="inputdepart.html">Input Departemen</a></li>
+            <li><a href="datadepart.html">Data Departemen</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class='bx bx-notepad'></i>
+              <span class="link_name">Cuti</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Cuti</a></li>
+            <li><a href="approv.html">Approval</a></li>
+            <li><a href="datacuti.html">Data Cuti</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="laporan.html">
+            <i class='bx bxs-report' ></i>
+            <span class="link_name">Laporan</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="laporan.html">Laporan</a></li>
+          </ul>
+        </li>
+
+        <!-- Logout -->
+        <li>
+          <div class="profile-details">
+            <a href="">
+              <i class='bx bx-log-out' ></i>
+              <span class="link_name">Keluar</span>
+            </a>
+        </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Isi-->
+    <section class="home-section">
+      <div class="home-content">
+        <i class='bx bx-menu' ></i>
+        <span class="text">Dashboard</span>
+      </div>
+
+      <div class="main-content">
+        <main>
+          <div class="dash-card">
+            <div class="card-single">
+              <div class="card-body">
+                <i class="bx bx-group"></i>
+                <div>
+                  <h5>Karyawan</h5>
+                  <h4>8</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-single">
+              <div class="card-body">
+                <i class='bx bx-time-five'></i>
+                <div>
+                  <h5>Menunggu Persetujuan</h5>
+                  <h4>2</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-single">
+              <div class="card-body">
+                <i class='bx bxs-user-check'></i>
+                <div>
+                  <h5>Karyawan Libur</h5>
+                  <h4>3</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="recent">
+            <div class="aktif-grid">
+              <div class="aktif-card">
+                <h3>Karyawan Aktif</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Nama</th>
+                      <th>Departemen</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Jauhari</td>
+                      <td>Akunting</td>
+                    </tr>
+                    <tr>
+                      <td>Sunarto</td>
+                      <td>IT</td>
+                    </tr>
+                    <tr>
+                      <td>Nicholas</td>
+                      <td>IT</td>
+                    </tr>
+                    <tr>
+                      <td>Patrick</td>
+                      <td>Akunting</td>
+                    </tr>
+                    <tr>
+                      <td>Dimas</td>
+                      <td>IT</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="libur-card">
+                <h3>Karyawan Libur</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Nama</th>
+                      <th>Departemen</th>
+                      <th>Hari</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Jerry</td>
+                      <td>IT</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>Elvin</td>
+                      <td>Akunting</td>
+                      <td>7</td>
+                    </tr>
+                    <tr>
+                      <td>Kelvin</td>
+                      <td>Akunting</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
